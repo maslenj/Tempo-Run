@@ -94,7 +94,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewD
         }
         catch
         {
-            print("hehe")
+            print("Error in loading songs")
         }
     }
     
@@ -134,7 +134,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewD
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let speedValue: Double = manager.location?.speed else { return }
         audioPlayer.rate = Float(speedValue/desiredSpeed)
-        print(audioPlayer.rate)
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -156,7 +155,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewD
         }
         catch
         {
-            print("ERROR")
+            print("Error in playing selected song")
         }
         locationManager.startUpdatingLocation()
     }
