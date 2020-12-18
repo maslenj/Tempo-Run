@@ -2,7 +2,7 @@
 
 ## About
 
-Tempo Run is an app developed in Swift which allows users to play music at different rates based off of the speed that they are travelling at. It's intended use is for live precise pacing during distance running.
+Tempo Run is an app developed in Swift which allows users to play music at different rates based off of the speed that they are travelling at. It's intended use is for live pacing during distance running.
 
 ## How to Use
 
